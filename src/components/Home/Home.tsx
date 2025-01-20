@@ -12,7 +12,7 @@ export default function Home() {
             voluptatem cupiditate quo exercitationem sunt labore.
         </p>
 
-        <button><Link to="/about">Find out more!</Link></button>
+        <button><Link to="/tasks">Find out more!</Link></button>
     </header>
 
     <main>
