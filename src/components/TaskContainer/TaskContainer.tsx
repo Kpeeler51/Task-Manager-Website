@@ -8,17 +8,15 @@ interface Task {
 
 interface TaskContainerProps {
   tasks: Task[];
+  onTaskClick: (task: Task) => void;
 }
 
-export default function TaskContainer({ tasks }: TaskContainerProps) {
-  const taskList = tasks.map((task) => (
-    <TaskCard key={Date.now()} task={task.task} />
-  ));
-
+export default function TaskContainer({ tasks, onTaskClick }: TaskContainerProps) {
   return (
     <div className="taskcontainer">
-      TaskContainer
-      {taskList}
+      {tasks.map((task, index) => (
+        <TaskCard key={index} task={task} onClick={() => onTaskClick(task)} />
+      ))}
     </div>
   );
 }

@@ -19,14 +19,13 @@ export default function Tasks() {
 
   const handleTaskClick = (task: Task) => {
     setSelectedTask(task);
+    console.log(`Task selected: ${task.task}`);
   };
 
   return (
-    <>
     <div className='taskpage'>
-    <TaskContainer tasks={tasks}/>
-    <TaskWindow/>
+      <TaskContainer tasks={tasks} onTaskClick={handleTaskClick} />
+      <TaskWindow/>
     </div>
-    </>
   )
 }
