@@ -1,7 +1,10 @@
-import React from 'react'
+import TaskCard from "../TaskCard/TaskCard"
 
 export default function TaskContainer() {
   return (
-    <div>TaskContainer</div>
+    <div>TaskContainer
+        <TaskCard />
+        <TaskCard />
+    </div>
   )
 }
