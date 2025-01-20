@@ -1,4 +1,5 @@
 import Dropdown from '../Dropdown/Dropdown'
+import {Link} from 'react-router'
 
 export default function Home() {    
   return (
@@ -10,6 +11,8 @@ export default function Home() {
             Blanditiis assumenda, dolorum deserunt sequi
             voluptatem cupiditate quo exercitationem sunt labore.
         </p>
+
+        <button><Link to="/about">Find out more!</Link></button>
     </header>
 
     <main>
