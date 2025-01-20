@@ -1,4 +1,5 @@
 import TaskCard from "../TaskCard/TaskCard";
+import './TaskContainer.css'
 
 interface Task {
   task: string;
@@ -15,7 +16,7 @@ export default function TaskContainer({ tasks }: TaskContainerProps) {
   ));
 
   return (
-    <div>
+    <div className="taskcontainer">
       TaskContainer
       {taskList}
     </div>

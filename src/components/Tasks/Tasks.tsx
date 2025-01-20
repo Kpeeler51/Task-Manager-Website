@@ -1,5 +1,5 @@
 import {useState} from 'react';
-
+import './Tasks.css'
 import TaskContainer from "../TaskContainer/TaskContainer"
 import TaskWindow from "../TaskWindow/TaskWindow"
 
@@ -15,9 +15,10 @@ export default function Tasks() {
 
   return (
     <>
-    <div>Tasks</div>
+    <div className='taskpage'>
     <TaskContainer tasks={tasks}/>
     <TaskWindow/>
+    </div>
     </>
   )
 }
