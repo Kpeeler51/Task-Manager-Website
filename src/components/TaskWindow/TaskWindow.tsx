@@ -1,10 +1,24 @@
 import TaskDetails from '../TaskDetails/TaskDetails';
 import './TaskWindow.css'
-export default function TaskWindow() {
+
+
+interface Task {
+  task: string;
+  desc: string;
+}
+
+interface TaskWindowProps {
+  selectedTask: Task | null;
+}
+
+export default function TaskWindow({ selectedTask }: TaskWindowProps) {
   return (
     <div className='taskwindow'>
-        TaskWindow
-        <TaskDetails/>
+      {selectedTask ? (
+        <TaskDetails task={selectedTask} />
+      ) : (
+        <p>Select a task to view details</p>
+      )}
     </div>
   )
 }
