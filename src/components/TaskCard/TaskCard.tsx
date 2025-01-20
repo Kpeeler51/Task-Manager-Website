@@ -1,6 +1,11 @@
 
-export default function TaskCard() {
-  return (
-    <div>TaskCard</div>
-  )
-}
+interface TaskCardProps {
+    task: string;
+  }
+  
+  export default function TaskCard({ task }: TaskCardProps) {
+    return (
+      <div className="TaskCard">{task}</div>
+    )
+  }
+  

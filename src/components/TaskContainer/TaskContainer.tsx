@@ -1,10 +1,23 @@
-import TaskCard from "../TaskCard/TaskCard"
+import TaskCard from "../TaskCard/TaskCard";
 
-export default function TaskContainer() {
+interface Task {
+  task: string;
+  desc: string;
+}
+
+interface TaskContainerProps {
+  tasks: Task[];
+}
+
+export default function TaskContainer({ tasks }: TaskContainerProps) {
+  const taskList = tasks.map((task) => (
+    <TaskCard key={Date.now()} task={task.task} />
+  ));
+
   return (
-    <div>TaskContainer
-        <TaskCard />
-        <TaskCard />
+    <div>
+      TaskContainer
+      {taskList}
     </div>
-  )
+  );
 }
