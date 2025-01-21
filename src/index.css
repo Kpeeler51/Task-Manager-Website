@@ -1,4 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
+  }
+
+  :root {
+    font-family: 'Assistant', sans-serif;
+  }
+
+  h1, h2 {
+    font-family: 'Open Sans', sans-serif;
   }
