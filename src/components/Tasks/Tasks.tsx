@@ -2,6 +2,7 @@ import {useState} from 'react';
 import './Tasks.css'
 import TaskContainer from "../TaskContainer/TaskContainer"
 import TaskWindow from "../TaskWindow/TaskWindow"
+import TaskForm from "../TaskForm/TaskForm"
 
 interface Task {
   task: string;
@@ -23,9 +24,10 @@ export default function Tasks() {
   };
 
   return (
-    <div className='taskpage'>
+    <main className='taskpage'>
+      <TaskForm/>
       <TaskContainer tasks={tasks} onTaskClick={handleTaskClick} />
       <TaskWindow selectedTask={selectedTask} />
-    </div>
+    </main>
   )
 }
