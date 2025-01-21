@@ -23,9 +23,13 @@ export default function Tasks() {
     console.log(`Task selected: ${task.task}`);
   };
 
+  const handleAddTask = (newTask: Task) => {
+    setTasks(prevTasks => [...prevTasks, newTask]);
+  };
+
   return (
     <main className='taskpage'>
-      <TaskForm/>
+      <TaskForm onAddTask={handleAddTask} />
       <TaskContainer tasks={tasks} onTaskClick={handleTaskClick} />
       <TaskWindow selectedTask={selectedTask} />
     </main>
