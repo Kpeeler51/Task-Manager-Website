@@ -1,0 +1,30 @@
+.home-header {
+    margin: 2rem
+}
+
+.header-title {
+    margin-bottom:1rem;
+}
+
+.header-link {
+    margin: 2rem 2rem 0.25rem 2rem;
+}
+
+.home-info {
+    margin: 2rem 0rem;
+}
+
+.home-container {
+    margin: 2rem 0rem;
+    padding: 0.5rem 0rem;
+}
+
+.main-header {
+    background-color: #8d99ae8c;
+}
+
+.home-item {
+    margin: 0rem 1rem
+}
+
+/* #8D99AE */
