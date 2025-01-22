@@ -15,7 +15,7 @@ interface TaskContainerProps {
 }
 
 export default function TaskContainer({
-   tasks,onTaskClick, onComplete, onDelete }: TaskContainerProps) {
+   tasks, onTaskClick, onComplete, onDelete }: TaskContainerProps) {
   return (
     <div className="taskcontainer">
       {tasks.map((task, index) => (

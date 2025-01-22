@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import {useState, useMemo} from 'react';
 import './Tasks.css'
 import TaskContainer from "../TaskContainer/TaskContainer"
 import TaskWindow from "../TaskWindow/TaskWindow"
@@ -17,6 +17,8 @@ export default function Tasks() {
     {task: 'clean', desc: 'clean room', completed: false},
     {task: 'activity', desc: 'physical activity', completed: false},
   ]);
+
+  const [filter, setFilter] = useState<'all' | 'completed' | 'active'>('all');
 
   const handleComplete = (index: number) => {
     setTasks(prevTasks => prevTasks.map((task, i) => 
@@ -39,17 +41,28 @@ export default function Tasks() {
     setTasks(prevTasks => [...prevTasks, newTask]);
   };
 
+  const filteredTasks = useMemo(() => {
+    switch (filter) {
+      case 'completed':
+        return tasks.filter(task => task.completed);
+      case 'active':
+        return tasks.filter(task => !task.completed);
+      default:
+        return tasks;
+    }
+  }, [tasks, filter]);
+
   return (
     <main className='taskpage'>
       <div className="tasktab">
       <TaskForm onAddTask={handleAddTask} />
       <TaskContainer 
-        tasks={tasks} 
+        tasks={filteredTasks} 
         onTaskClick={handleTaskClick} 
         onComplete={handleComplete}
         onDelete={handleDelete}
       />
-      <FilterButtons/>
+      <FilterButtons setFilter={setFilter} currentFilter={filter} />
       </div>
       <TaskWindow selectedTask={selectedTask} />
     </main>
