@@ -1,5 +1,15 @@
-.taskpage{
-    display:inline-flex;
+.taskpage {
+    display: flex;
     justify-content: space-evenly;
-    width:100%;
+    width: 100%;
+    height: 94vh;
+    margin-top: 1rem;
+}
+
+.tasktab {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    height: 100%;
+    justify-content: flex-start;
 }

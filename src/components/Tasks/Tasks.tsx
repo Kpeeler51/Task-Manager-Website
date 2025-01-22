@@ -29,8 +29,10 @@ export default function Tasks() {
 
   return (
     <main className='taskpage'>
+      <div className="tasktab">
       <TaskForm onAddTask={handleAddTask} />
       <TaskContainer tasks={tasks} onTaskClick={handleTaskClick} />
+      </div>
       <TaskWindow selectedTask={selectedTask} />
     </main>
   )
