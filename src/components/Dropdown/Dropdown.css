@@ -1,12 +1,14 @@
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
 .dropdown-toggle {
     background: none;
-    border: none;
+    padding: 0;
+    margin: 0.5rem
+}
+
+.dropdown-toggle:hover {
+    background: none;
     cursor: pointer;
-    font-size: 1.2rem;
-    padding: 5px 10px;
+}
+
+.dropdown-icon {
+    height: 40px;
 }
