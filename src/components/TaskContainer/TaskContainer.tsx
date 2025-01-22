@@ -11,9 +11,11 @@ interface TaskContainerProps {
   tasks: Task[];
   onTaskClick: (task: Task) => void;
   onComplete: (index: number) => void;
+  onDelete: (index: number) => void;
 }
 
-export default function TaskContainer({ tasks,onTaskClick, onComplete }: TaskContainerProps) {
+export default function TaskContainer({
+   tasks,onTaskClick, onComplete, onDelete }: TaskContainerProps) {
   return (
     <div className="taskcontainer">
       {tasks.map((task, index) => (
@@ -22,6 +24,7 @@ export default function TaskContainer({ tasks,onTaskClick, onComplete }: TaskCon
           task={task} 
           onClick={() => onTaskClick(task)}
           onComplete={() => onComplete(index)}
+          onDelete={() => onDelete(index)  }
         />
       ))}
     </div>

@@ -23,6 +23,10 @@ export default function Tasks() {
     ));
   };
 
+  const handleDelete = (index : number) => {
+    setTasks(prevTasks => prevTasks.filter((_, i) => i!== index));
+  };
+
   const [selectedTask, setSelectedTask] = useState<Task | null>(null);
 
   const handleTaskClick = (task: Task) => {
@@ -42,6 +46,7 @@ export default function Tasks() {
         tasks={tasks} 
         onTaskClick={handleTaskClick} 
         onComplete={handleComplete}
+        onDelete={handleDelete}
       />
       </div>
       <TaskWindow selectedTask={selectedTask} />
