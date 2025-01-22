@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './TaskForm.css'
 
 interface Task {
   task: string;
@@ -27,23 +28,35 @@ export default function TaskForm({ onAddTask }: TaskFormProps) {
 
   return (
     <form className="task-form" onSubmit={handleSubmit}>
-      <input
-        type="text"
-        name="task"
-        value={newTask.task}
-        onChange={handleInputChange}
-        placeholder="Enter task name"
-        required
-      />
-      <input
-        type="text"
-        name="desc"
-        value={newTask.desc}
-        onChange={handleInputChange}
-        placeholder="Enter task description"
-        required
-      />
-      <button type="submit">Add Task</button>
+      <div className="input-field">
+        <label>Task Name:
+        <input
+          className='task-input'
+          type="text"
+          name="task"
+          value={newTask.task}
+          onChange={handleInputChange}
+          placeholder="Enter task name"
+          size={50}
+          required
+        />
+        </label>
+      </div>
+       <div className="input-field">
+        <label> Task Description:
+        <input
+          className='task-input'
+          type="text"
+          name="desc"
+          value={newTask.desc}
+          onChange={handleInputChange}
+          placeholder="Enter task description"
+          size={55}
+          required
+        />
+        </label>
+      </div>
+      <button className='task-button' type="submit">Add Task</button>
     </form>
   );
 }

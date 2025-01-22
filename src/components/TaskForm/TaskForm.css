@@ -1,0 +1,22 @@
+.task-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.input-field {
+    margin: 0.5rem 0rem;
+}
+
+.task-button {
+    margin-top: 0.5rem;
+    width: 10%;
+}
+
+.task-name{
+    margin-right: 1rem;
+}
+
+.task-input{
+    margin-left: 0.5rem;
+}

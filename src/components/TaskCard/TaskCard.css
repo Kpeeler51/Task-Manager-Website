@@ -1,4 +1,12 @@
 .taskcard {
-    border: solid black;
-    size:100%
+    border: solid #8d99ae;
+    width: 80%;
+    max-width: 1000px;
+    cursor:pointer;
+    border-radius:10px;
+    margin: 0.3rem
+}
+
+.taskcard:hover {
+    background-color: #8d99ae8c;
 }
