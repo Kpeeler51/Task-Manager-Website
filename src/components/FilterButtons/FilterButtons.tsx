@@ -24,7 +24,7 @@ interface FilterButtonsProps {
           onClick={() => setFilter('active')}
           className={currentFilter === 'active' ? 'active' : ''}
         >
-          Uncomplete Tasks
+          Active Tasks
         </button>
       </div>
     );
