@@ -3,6 +3,7 @@ import './Tasks.css'
 import TaskContainer from "../TaskContainer/TaskContainer"
 import TaskWindow from "../TaskWindow/TaskWindow"
 import TaskForm from "../TaskForm/TaskForm"
+import FilterButtons from '../FilterButtons/FilterButtons'
 
 interface Task {
   task: string;
@@ -48,6 +49,7 @@ export default function Tasks() {
         onComplete={handleComplete}
         onDelete={handleDelete}
       />
+      <FilterButtons/>
       </div>
       <TaskWindow selectedTask={selectedTask} />
     </main>
