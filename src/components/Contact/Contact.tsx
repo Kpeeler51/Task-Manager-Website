@@ -1,4 +1,5 @@
 import ContactForm from '../ContactForm/ContactForm';
+import './Contact.css'
 
 interface FormData {
   firstName: string;
@@ -14,7 +15,7 @@ export default function Contact() {
 
   return (
     <div className="contact-page">
-      <h1>Contact Us</h1>
+      <h1 className='contact-header'>Contact Us</h1>
       <ContactForm onSubmit={handleFormSubmit} />
     </div>
   );
