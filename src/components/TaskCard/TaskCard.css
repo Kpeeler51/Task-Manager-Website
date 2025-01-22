@@ -10,3 +10,7 @@
 .taskcard:hover {
     background-color: #8d99ae8c;
 }
+
+.taskcard .completed {
+    text-decoration: line-through;
+  }
