@@ -1,5 +1,5 @@
 import TaskCard from "../TaskCard/TaskCard";
-import './TaskContainer.css'
+import './TaskContainer.css';
 
 interface Task {
   task: string;
@@ -22,9 +22,9 @@ export default function TaskContainer({
         <TaskCard 
           key={index} 
           task={task} 
-          onClick={() => onTaskClick(task)}
+          onTaskClick={() => onTaskClick(task)}
           onComplete={() => onComplete(index)}
-          onDelete={() => onDelete(index)  }
+          onDelete={() => onDelete(index)}
         />
       ))}
     </div>

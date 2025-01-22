@@ -9,15 +9,15 @@ interface Task {
 
 interface TaskCardProps {
   task: Task;
-  onClick: () => void;
+  onTaskClick: () => void;
   onComplete: () => void;
   onDelete: () => void;
 }
 
 export default function TaskCard({
-   task, onClick, onComplete, onDelete }: TaskCardProps) {
+   task, onTaskClick, onComplete, onDelete }: TaskCardProps) {
   return (
-    <div className="taskcard" onClick={onClick}>
+    <div className="taskcard" onClick={onTaskClick}>
       <input
         type="checkbox"
         checked={task.completed}
