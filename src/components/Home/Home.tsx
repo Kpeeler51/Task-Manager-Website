@@ -5,7 +5,7 @@ import './Home.css'
 export default function Home() {    
   return (
     <>
-    <header>
+    <header className='home-header'>
         <h1>Task Management Made Easy</h1>
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit.
@@ -16,8 +16,8 @@ export default function Home() {
         <button><Link to="/tasks">Find out more!</Link></button>
     </header>
 
-    <main>
-        <section>
+    <main className='home-info'>
+        <section className='home-item'>
             <h2> Goal </h2>
             <Dropdown>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ut ipsum quos consequuntur obcaecati soluta aspernatur aliquid est earum ad. Facilis omnis maxime quaerat quis nam reprehenderit architecto unde animi!
@@ -25,7 +25,7 @@ export default function Home() {
                 Voluptas magni non, eligendi voluptatibus voluptate aspernatur vero? Exercitationem, odit! Autem eligendi ipsa saepe voluptas ullam. Adipisci inventore autem reprehenderit deserunt repudiandae maxime labore neque! Libero beatae suscipit placeat cupiditate.</p>
             </Dropdown>
         </section>
-        <section>
+        <section className='home-item'>
             <h2> Supporting Statement</h2>
             <Dropdown>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, ut ipsum quos consequuntur obcaecati soluta aspernatur aliquid est earum ad. Facilis omnis maxime quaerat quis nam reprehenderit architecto unde animi!
