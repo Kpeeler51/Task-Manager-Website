@@ -1,0 +1,20 @@
+.name-form {
+    margin: 1rem;
+}
+
+.name-field {
+    margin:0.4rem 2.6rem 2.5rem 0.4rem;
+}
+
+.mail-field {
+    margin:0.4rem;
+}
+
+.message-form {
+    margin: 1rem 2rem 1rem 1rem;
+}
+
+.message-label{
+    position:relative;
+    bottom: 136px
+}
