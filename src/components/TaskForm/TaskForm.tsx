@@ -4,6 +4,7 @@ import './TaskForm.css'
 interface Task {
   task: string;
   desc: string;
+  completed: boolean;
 }
 
 interface TaskFormProps {
@@ -11,7 +12,7 @@ interface TaskFormProps {
 }
 
 export default function TaskForm({ onAddTask }: TaskFormProps) {
-  const [newTask, setNewTask] = useState<Task>({ task: '', desc: '' });
+  const [newTask, setNewTask] = useState<Task>({ task: '', desc: '', completed: false });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const { name, value } = e.target;
@@ -22,7 +23,7 @@ export default function TaskForm({ onAddTask }: TaskFormProps) {
     e.preventDefault();
     if (newTask.task && newTask.desc) {
       onAddTask(newTask);
-      setNewTask({ task: '', desc: '' });
+      setNewTask({ task: '', desc: '', completed: false });
     }
   };
 

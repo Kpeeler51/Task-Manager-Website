@@ -7,14 +7,21 @@ import TaskForm from "../TaskForm/TaskForm"
 interface Task {
   task: string;
   desc: string;
+  completed:boolean;
 }
 
 export default function Tasks() {
   const [tasks, setTasks] = useState<Task[]>([
-    {task:'chores', desc: 'take out trash'},
-    {task: 'clean', desc: 'clean room'},
-    {task: 'activity', desc: 'physical activity'},
+    {task:'chores', desc: 'take out trash', completed: false},
+    {task: 'clean', desc: 'clean room', completed: false},
+    {task: 'activity', desc: 'physical activity', completed: false},
   ]);
+
+  const handleComplete = (index: number) => {
+    setTasks(prevTasks => prevTasks.map((task, i) => 
+      i === index ? { ...task, completed: !task.completed } : task
+    ));
+  };
 
   const [selectedTask, setSelectedTask] = useState<Task | null>(null);
 
@@ -31,7 +38,11 @@ export default function Tasks() {
     <main className='taskpage'>
       <div className="tasktab">
       <TaskForm onAddTask={handleAddTask} />
-      <TaskContainer tasks={tasks} onTaskClick={handleTaskClick} />
+      <TaskContainer 
+        tasks={tasks} 
+        onTaskClick={handleTaskClick} 
+        onComplete={handleComplete}
+      />
       </div>
       <TaskWindow selectedTask={selectedTask} />
     </main>
