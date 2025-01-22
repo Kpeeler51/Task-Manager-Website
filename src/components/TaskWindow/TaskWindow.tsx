@@ -13,11 +13,11 @@ interface TaskWindowProps {
 
 export default function TaskWindow({ selectedTask }: TaskWindowProps) {
   return (
-    <div className='taskwindow'>
+    <div className='task-window'>
       {selectedTask ? (
         <TaskDetails task={selectedTask} />
       ) : (
-        <p>Select a task to view details</p>
+        <p className='task-select'>Select a task to view details</p>
       )}
     </div>
   )

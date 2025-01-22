@@ -1,5 +1,10 @@
-.taskwindow{
+.task-window{
     width:40%;
     border: solid black;
     height: 98%;
+    margin-right: 0.25rem;
+}
+
+.task-select {
+    margin-top: 1rem;
 }
