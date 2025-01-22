@@ -1,4 +1,5 @@
 import './TaskCard.css'
+import Delete from '../../assets/Icons/trashcan50.png'
 
 interface Task {
   task: string;
@@ -36,7 +37,7 @@ export default function TaskCard({
           onDelete();
         }}
       >
-        Delete
+        <img src={Delete} alt="Delete" />
       </button>
     </div>
   );
