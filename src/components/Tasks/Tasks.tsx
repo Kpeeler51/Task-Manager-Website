@@ -1,14 +1,14 @@
 import {useState, useMemo} from 'react';
-import './Tasks.css'
-import TaskContainer from "../TaskContainer/TaskContainer"
-import TaskWindow from "../TaskWindow/TaskWindow"
-import TaskForm from "../TaskForm/TaskForm"
-import FilterButtons from '../FilterButtons/FilterButtons'
+import './Tasks.css';
+import TaskContainer from '../TaskContainer/TaskContainer';
+import TaskWindow from '../TaskWindow/TaskWindow';
+import TaskForm from '../TaskForm/TaskForm';
+import FilterButtons from '../FilterButtons/FilterButtons';
 
 interface Task {
   task: string;
   desc: string;
-  completed:boolean;
+  completed: boolean;
 }
 
 export default function Tasks() {
