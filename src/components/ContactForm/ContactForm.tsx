@@ -1,25 +1,27 @@
 import './ContactForm.css';
 import { useState, ChangeEvent, FormEvent } from 'react';
 
+// Define the type and structure for the form data
 interface FormData {
   firstName: string;
   lastName: string;
   email: string;
   message: string;
 }
-
+// Define the type and structure for the contact form properties.
 interface ContactFormProps {
   onSubmit: (formData: FormData) => void;
 }
-
+// ContactForm component for handling user input and submission.
 export default function ContactForm({ onSubmit }: ContactFormProps) {
+  // State to hold the form data.
   const [formData, setFormData] = useState<FormData>({
     firstName: '',
     lastName: '',
     email: '',
     message: ''
   });
-
+// handle input change and update the form.
   const handleChange = (e: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData(prevData => ({
@@ -27,10 +29,11 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
       [name]: value
     }));
   };
-
+// Handle form submission event and submit the form data to the parent component. 
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     onSubmit(formData);
+    // resets form after submission.
     setFormData({
       firstName: '',
       lastName: '',
@@ -41,6 +44,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
 
   return (
     <form onSubmit={handleSubmit}>
+      {/* Name Field */}
       <div className="name-form">
         <label> First Name:
         <input
@@ -63,6 +67,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
         />
         </label>
       </div>
+      {/* Email Field */}
       <div className="mail-form">
         <label> Email:
         <input
@@ -76,6 +81,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
         />
         </label>
       </div>
+      {/* Message Field */}
       <div className="message-form">
         <label htmlFor='message' className='message-label'> Message: </label>
         <textarea
@@ -86,6 +92,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           rows={10} cols={60}
         ></textarea>
       </div>
+      {/* Submit Button */}
       <button className='submit-button' type="submit">Submit</button>
     </form>
   );
