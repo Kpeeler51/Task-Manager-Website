@@ -14,7 +14,7 @@ export default function Home() {
             voluptatem cupiditate quo exercitationem sunt labore.
         </p>
         {/* Secondary link to draw users to task page. */}
-        <button className='header-link'><Link to="/tasks">Find out more!</Link></button>
+        <Link to="/tasks" className='header-link'>Find out more!</Link>
     </header>
 
     {/* Main content area. Contains website goals and supporting statements. */}

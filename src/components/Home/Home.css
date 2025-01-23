@@ -8,6 +8,14 @@
 
 .header-link {
     margin: 2rem 2rem 0.25rem 2rem;
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #8D99AE;
+}
+
+.header-link:hover { 
+    background-color: #758394;
+    color: black
 }
 
 .home-info {
