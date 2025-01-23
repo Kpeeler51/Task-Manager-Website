@@ -5,7 +5,7 @@ import TaskWindow from '../TaskWindow/TaskWindow';
 import TaskForm from '../TaskForm/TaskForm';
 import FilterButtons from '../FilterButtons/FilterButtons';
 
-// Define the type and structure for tasks.
+// Define the type and structure for the tasks.
 interface Task {
   task: string;
   desc: string;
