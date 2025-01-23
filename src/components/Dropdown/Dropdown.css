@@ -1,3 +1,4 @@
+/* Overwrites global button customization for dropdown toggle buttons.  */
 .dropdown-toggle {
     background: none;
     padding: 0;

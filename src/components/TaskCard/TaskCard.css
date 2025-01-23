@@ -8,16 +8,16 @@
     position: relative;
     padding: 1rem 2rem 1rem 1rem;
 }
-
+/* Task cards will glow when hovered over. */
 .taskcard:hover {
     background-color: #8d99ae8c;
 }
-
+/* A line will strike through completed task names. */
 .taskcard .completed {
     text-decoration: line-through;
   }
-
-  .delete-button {
+/* Custom Delete button on the right side of taskcards. */
+.delete-button {
     position: absolute;
     top: 0.8rem;
     right:0.5rem;
@@ -26,16 +26,16 @@
     cursor: pointer;
     padding: 0;
 }
-
+/* Custom delete button hover. Turns the icon red. */
 .delete-button:hover {
     opacity: 0.7;
     background-color: red;
 }
-
+/* Resizes custom delete button image */
 .delete-button img {
     width: 30px;
 }
-
+/* Relocates the checkbox to the left side of the card. */
 .checkbox-input{
     position: absolute;
     left: 2px;

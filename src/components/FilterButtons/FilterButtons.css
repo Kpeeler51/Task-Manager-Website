@@ -6,7 +6,7 @@
   .filter-buttons button {
     margin: 0 10px;
   }
-  
+  /* Currently active filter will display a different color. */
   .filter-buttons button.active {
     background-color: #2B2D42;
     color: white;
