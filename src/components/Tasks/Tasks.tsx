@@ -15,9 +15,6 @@ interface Task {
 export default function Tasks() {
   // state for storing all tasks and their status.
   const [tasks, setTasks] = useState<Task[]>([
-    {task:'chores', desc: 'take out trash', completed: false},
-    {task: 'clean', desc: 'clean room', completed: false},
-    {task: 'activity', desc: 'physical activity', completed: false},
   ]);
 
   // State for current filter selection. 
