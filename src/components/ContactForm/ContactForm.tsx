@@ -50,7 +50,6 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           value={formData.firstName}
           onChange={handleChange}
           placeholder="First Name"
-          aria-label="First Name"
         />
         </label>
         <label> Last Name:
@@ -61,7 +60,6 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           value={formData.lastName}
           onChange={handleChange}
           placeholder="Last Name"
-          aria-label="Last Name"
         />
         </label>
       </div>
@@ -74,7 +72,6 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           value={formData.email}
           onChange={handleChange}
           placeholder="Email"
-          aria-label="Email"
           size={60}
         />
         </label>
@@ -86,7 +83,6 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           value={formData.message}
           onChange={handleChange}
           placeholder="Message"
-          aria-label="Message"
           rows={10} cols={60}
         ></textarea>
       </div>
