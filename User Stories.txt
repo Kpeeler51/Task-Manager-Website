@@ -1,0 +1,5 @@
+1. As a user, I want to create a to do list with titles and descriptions so I can organize my workload efficiently.
+
+2. As a user, I want to delete tasks so that I can remove tasks that are no longer relevant.
+
+3. As a user, I want to sort tasks between all, complete, or incomplete to organize my workload.

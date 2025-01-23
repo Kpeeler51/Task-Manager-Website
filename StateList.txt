@@ -1,0 +1,18 @@
+Component list.
+
+Presentational:
+ContactForm
+Dropdown
+FilterButtons
+Footer
+TaskCard
+TaskContainer
+TaskDetails
+TaskForm
+TaskWindow
+Navbar
+
+Container:
+Contact
+Home
+Tasks
