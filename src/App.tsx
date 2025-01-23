@@ -4,6 +4,7 @@ import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Tasks from './components/Tasks/Tasks';
 import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 function App() {
 
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
     </BrowserRouter>
+    <Footer /> {/* Globally displays the Footer */}
     </>
   )
 }
