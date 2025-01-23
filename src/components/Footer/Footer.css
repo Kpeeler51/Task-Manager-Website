@@ -1,0 +1,15 @@
+footer{
+    background-color: #8d99ae8c;
+    text-align: center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright {
+    padding-right: 1rem;
+}
+
+.icons a {
+    text-decoration: underline;
+}
