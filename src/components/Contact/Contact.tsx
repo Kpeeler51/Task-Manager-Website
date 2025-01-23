@@ -14,9 +14,9 @@ export default function Contact() {
   };
 
   return (
-    <div className="contact-page">
+    <main className="contact-page">
       <h1 className='contact-header'>Contact Us</h1>
       <ContactForm onSubmit={handleFormSubmit} />
-    </div>
+    </main>
   );
 }
