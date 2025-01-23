@@ -1,5 +1,5 @@
 import './App.css'
-import {BrowserRouter, Route, Routes} from 'react-router'
+import {HashRouter, Route, Routes} from 'react-router'
 import Navbar from './components/Navbar/Navbar';
 import Home from './components/Home/Home';
 import Tasks from './components/Tasks/Tasks';
@@ -10,14 +10,14 @@ function App() {
   return (
     <>
     {/* Globally displays the Navbar and handles where it will route to. */}
-   <BrowserRouter>
+   <HashRouter>
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tasks" element={<Tasks />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
     <Footer /> {/* Globally displays the Footer */}
     </>
   )
