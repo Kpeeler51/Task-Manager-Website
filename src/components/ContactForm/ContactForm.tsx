@@ -54,6 +54,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           value={formData.firstName}
           onChange={handleChange}
           placeholder="First Name"
+          required
         />
         </label>
         <label> Last Name:
@@ -64,6 +65,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           value={formData.lastName}
           onChange={handleChange}
           placeholder="Last Name"
+          required
         />
         </label>
       </div>
@@ -78,6 +80,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           onChange={handleChange}
           placeholder="Email"
           size={60}
+          required
         />
         </label>
       </div>
@@ -90,6 +93,7 @@ export default function ContactForm({ onSubmit }: ContactFormProps) {
           onChange={handleChange}
           placeholder="Message"
           rows={10} cols={60}
+          required
         ></textarea>
       </div>
       {/* Submit Button */}
