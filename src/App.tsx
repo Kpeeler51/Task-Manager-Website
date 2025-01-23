@@ -8,6 +8,7 @@ function App() {
 
   return (
     <>
+    {/* Globally displays the Navbar and handles where it will route to. */}
    <BrowserRouter>
       <Navbar />
       <Routes>
