@@ -30,7 +30,6 @@ export default function TaskCard({
           onComplete();
         }}
       />
-      <p>{task.desc}</p>
       <button 
         className="delete-button" 
         onClick={(e) => {
