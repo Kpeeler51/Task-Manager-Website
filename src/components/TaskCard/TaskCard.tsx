@@ -18,17 +18,18 @@ export default function TaskCard({
    task, onTaskClick, onComplete, onDelete }: TaskCardProps) {
   return (
     <div className="taskcard" onClick={onTaskClick}>
+      <h3 className={task.completed ? 'completed' : ''}>
+        {task.task}
+      </h3>
       <input
         type="checkbox"
+        className='checkbox-input'
         checked={task.completed}
         onChange={(e) => {
           e.stopPropagation();
           onComplete();
         }}
       />
-      <h3 className={task.completed ? 'completed' : ''}>
-        {task.task}
-      </h3>
       <p>{task.desc}</p>
       <button 
         className="delete-button" 
