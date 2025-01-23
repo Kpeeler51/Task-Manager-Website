@@ -41,7 +41,6 @@ export default function Tasks() {
   // Handler for clicking and selecting a new task. 
   const handleTaskClick = (task: Task) => {
     setSelectedTask(task);
-    console.log(`Task selected: ${task.task}`);
   };
 
   // Handler for adding a new task.
