@@ -23,7 +23,7 @@ Designed by Kyle Peeler
 
 Source code hosted at <https://github.com/Kpeeler51/Task-Manager-Website>
 
-Github Pages website hosted at TODO
+Github Pages website hosted at <https://kpeeler51.github.io/Task-Manager-Website/>
 
 - Enter the tasks page and enter a task name and description.
 - Hit the "add task" button and it will be displayed in the list.
