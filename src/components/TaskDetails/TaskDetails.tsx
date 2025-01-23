@@ -1,4 +1,4 @@
-import './TaskDetails.css'
+import './TaskDetails.css';
 
 interface Task {
   task: string;

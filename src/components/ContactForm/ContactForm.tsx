@@ -1,4 +1,4 @@
-import './ContactForm.css'
+import './ContactForm.css';
 import { useState, ChangeEvent, FormEvent } from 'react';
 
 interface FormData {

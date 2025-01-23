@@ -1,5 +1,5 @@
 import ContactForm from '../ContactForm/ContactForm';
-import './Contact.css'
+import './Contact.css';
 
 interface FormData {
   firstName: string;

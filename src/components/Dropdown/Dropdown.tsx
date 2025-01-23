@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
-import './Dropdown.css'
-import upArrow from '../../assets/icons/iconup50.png'
-import downArrow from '../../assets/icons/icondown50.png'
+import React, { useState } from 'react';
+import './Dropdown.css';
+import upArrow from '../../assets/icons/iconup50.png';
+import downArrow from '../../assets/icons/icondown50.png';
 
 export default function Dropdown({children}: {children: React.ReactNode}) {
     const [isOpen, setOpen] = useState(false);

@@ -1,4 +1,4 @@
-import './FilterButtons.css'
+import './FilterButtons.css';
 
 interface FilterButtonsProps {
     setFilter: (filter: 'all' | 'completed' | 'active') => void;

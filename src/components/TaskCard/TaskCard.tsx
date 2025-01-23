@@ -1,5 +1,5 @@
-import './TaskCard.css'
-import Delete from '../../assets/Icons/trashcan50.png'
+import './TaskCard.css';
+import Delete from '../../assets/Icons/trashcan50.png';
 
 interface Task {
   task: string;

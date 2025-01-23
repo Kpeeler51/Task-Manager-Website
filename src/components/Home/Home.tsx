@@ -1,6 +1,6 @@
-import Dropdown from '../Dropdown/Dropdown'
-import {Link} from 'react-router'
-import './Home.css'
+import Dropdown from '../Dropdown/Dropdown';
+import {Link} from 'react-router';
+import './Home.css';
 
 export default function Home() {    
   return (

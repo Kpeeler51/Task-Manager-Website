@@ -1,5 +1,5 @@
 import TaskDetails from '../TaskDetails/TaskDetails';
-import './TaskWindow.css'
+import './TaskWindow.css';
 
 
 interface Task {
